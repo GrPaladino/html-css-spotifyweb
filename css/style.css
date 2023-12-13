@@ -231,8 +231,17 @@ main {
 
         /* Grid content */
 
+#page-cnt section {
+    margin: 2rem 0;
+}
+
+#page-cnt h1 {
+    padding: 10px 0;
+}
+
 #page-cnt .container {
     margin-top: 40px;
+    padding: 0;
 }
 
 #page-cnt .col {
@@ -244,7 +253,7 @@ main {
 }
 
 #page-cnt h4 {
-    font-size: .8rem
+    font-size: .8rem;
     padding-bottom: 4px;
     padding-top: 10px;
 }
