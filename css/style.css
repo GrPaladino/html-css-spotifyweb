@@ -188,6 +188,7 @@ main {
 
 #page-cnt {
     width: calc(100% - var(--navbar-width));
+    overflow: auto;
 }
 
         /* Top section */
@@ -212,7 +213,6 @@ main {
         /* Main section */
 
 #page-cnt .main {
-    overflow: auto;
     padding: 15px;
 }
 
@@ -244,6 +244,7 @@ main {
 }
 
 #page-cnt h4 {
+    font-size: .8rem
     padding-bottom: 4px;
     padding-top: 10px;
 }

@@ -91,10 +91,21 @@
             /* MEDIA QUERY MD */
 @media all and (min-width: 768px) {
     
+    /* Grid content */
+
+    #page-cnt .col {
+        width: 25%;
+    }
+    
 }
     
             /* MEDIA QUERY MD */
 @media all and (min-width: 992px) {
     
+    /* Grid content */
+
+    #page-cnt .col {
+        width: calc(100% / 6);
+    }
 }
     
