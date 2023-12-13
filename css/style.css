@@ -98,6 +98,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     padding: 10px;
     background-color: var(--navbar-bg-color);
     color: var(--navbar-text-color);
@@ -147,7 +148,6 @@ main {
     margin-bottom: 15px;
     margin-right: 10px;
     font-size: 30px;
-    text-align: center;
     background-color: var(--navbar-text-color);
     color: var(--navbar-bg-color);
 }
@@ -155,9 +155,39 @@ main {
 #nav a {
     font-size: .7rem;
     padding: 5px 0;
-
 }
 
+#nav #user-id {
+    width: var(--navbar-width);
+    margin-top: auto;
+}
+
+#nav #user-id li {
+    display: block;
+    margin: 0 auto;
+}
+
+#nav #user-id .layer {
+    overflow: hidden;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--navbar-text-color);
+}
+
+#nav #user-id a {
+    display: flex;
+    justify-content: center;
+}
+
+#nav #user-id #download {
+    width: 35%;
+}
+
+#nav #user-id span {
+    display: none;
+}
 
         /* PAGE CONTENT */
 
@@ -187,73 +217,5 @@ main {
     background-color: var(--playbar-bg-color);
 }
 
-    /*############# RESPONSIVE ############*/
-
-        /* MEDIA QUERY S */
-@media all and (min-width: 576px) {
-            
-        /* COMMAND PROMP */
-
-    :root {
-        /* Layout */
-    --navbar-width: 180px;
-    --bar-height: 100px;
-    --grid-padding: 15px;
-    --row-margin: -15px;
-    }
-
-        /* MAIN */
-
-        /* Navbar */
-
-    #nav {
-        align-items: flex-start;
-    }
-
-    #nav #logo-small {
-        display: none;
-    }
-
-    #nav #logo-big {
-        display: block;
-        width: 70%;
-        margin: 7px;
-    }
-
-    #nav .container {
-        padding: var(--navbar-padding);
-    }
-
-    #nav li {
-        padding: 7px 0;
-        display: flex;
-        align-items: center;
-    }
-
-    #nav li > img {
-        height: 30px;
-        margin: 0;
-    }
-
-    #nav li > span {
-        display: block;
-    }
-
-    #nav > #playlist {
-        display: block;
-    }
-}
-
-
-
-        /* MEDIA QUERY MD */
-@media all and (min-width: 768px) {
-
-}
-
-        /* MEDIA QUERY MD */
-@media all and (min-width: 992px) {
-
-}
 
 

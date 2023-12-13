@@ -1,0 +1,95 @@
+    /*############# RESPONSIVE ############*/
+
+        /* MEDIA QUERY S */
+@media all and (min-width: 576px) {
+            
+            /* COMMAND PROMP */
+    
+    :root {
+        /* Layout */
+    --navbar-width: 180px;
+    --bar-height: 100px;
+    --grid-padding: 15px;
+    --row-margin: -15px;
+    }
+    
+            /* MAIN */
+    
+            /* Navbar */
+    
+    #nav {
+        align-items: flex-start;
+    }
+    
+    #nav #logo-small {
+        display: none;
+    }
+    
+    #nav #logo-big {
+        display: block;
+        width: 70%;
+        margin: 7px;
+    }
+    
+    #nav .container {
+        padding: var(--navbar-padding);
+    }
+    
+    #nav li {
+        padding: 7px 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    #nav li > img {
+        height: 30px;
+        margin: 0;
+    }
+    
+    #nav li > span {
+        display: block;
+    }
+    
+    #nav > #playlist {
+        display: block;
+    }
+    
+    #nav #user-id li {
+        margin: 0;
+    }
+    
+    #nav #user-id li:first-child {
+        border-bottom: 1px solid var(--navbar-text-color);
+    }
+    
+    #nav #user-id a {
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #nav #user-id #download {
+        width: 10%;
+    }
+    
+    #nav #user-id span {
+        display: block;
+    }
+    
+    #nav #user-id .layer {
+        height: 30px;
+        width: 30px;        
+    }
+}
+    
+    
+            /* MEDIA QUERY MD */
+@media all and (min-width: 768px) {
+    
+}
+    
+            /* MEDIA QUERY MD */
+@media all and (min-width: 992px) {
+    
+}
+    
