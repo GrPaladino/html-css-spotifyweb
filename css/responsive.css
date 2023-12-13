@@ -80,6 +80,11 @@
         height: 30px;
         width: 30px;        
     }
+
+            /* TOP CONTENT */
+    #page-cnt .top a {
+        font-size: .9rem;
+    }
 }
     
     
