@@ -17,7 +17,7 @@
 
     --primary-text-color: #ffffff;
     --secondary-text-color: #696b71;
-    --navbar-text-color: #d2d2d2;
+    --navbar-text-color: #a3a3a3;
 
     /* Layout */
     --navbar-width: 50px;
@@ -80,6 +80,7 @@ li {
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 
@@ -134,14 +135,27 @@ main {
     display: none;
 }
 
+#nav > #playlist {
+    display: none;
+}
+
 #nav .plus {
+    display: inline-block;
     width: 40px;
     height: 40px;
-    margin: 15px 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
     font-size: 30px;
     text-align: center;
     background-color: var(--navbar-text-color);
     color: var(--navbar-bg-color);
+}
+
+#nav a {
+    font-size: .7rem;
+    padding: 5px 0;
+
 }
 
 
@@ -188,6 +202,10 @@ main {
     --row-margin: -15px;
     }
 
+        /* MAIN */
+
+        /* Navbar */
+
     #nav {
         align-items: flex-start;
     }
@@ -218,6 +236,10 @@ main {
     }
 
     #nav li > span {
+        display: block;
+    }
+
+    #nav > #playlist {
         display: block;
     }
 }
