@@ -71,6 +71,13 @@ a {
     text-decoration: none;
 }
 
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
+}
 
         /* MAIN */
 
@@ -99,34 +106,28 @@ main {
 }
 
 #nav #logo-big {
-    display: none;
+    width: 80%;
+    margin: 7px;
 }
 
-#nav #home {
-    margin: 10px 0;
-}
 
 #nav .container {
     padding: 0;
+    padding-top: 5px;
 }
 
 #nav li {
-    width: 100%;
-    padding: 5px 0;
+    display: flex;
+    align-items: center;
 }
 
 #nav li > img {
     height: 18px;
-    margin: 0 auto;
+    margin: 3px 0;
 }
 
 #nav li > span {
     padding-left: 10px;
-    display: none;
-}
-
-#nav > #playlist {
-    display: none;
 }
 
 #nav .plus {
@@ -147,19 +148,7 @@ main {
 }
 
 #nav #user-id {
-    width: var(--navbar-width);
     margin-top: auto;
-}
-
-#nav #user-id .container {
-    max-width: 82%;
-    margin: 0;
-    padding: 0;
-}
-
-#nav #user-id li {
-    display: block;
-    margin: 0 auto;
 }
 
 #nav #user-id .layer {
@@ -177,11 +166,7 @@ main {
 }
 
 #nav #user-id #download {
-    width: 35%;
-}
-
-#nav #user-id span {
-    display: none;
+    width: 60%;
 }
 
         /* PAGE CONTENT */

@@ -21,32 +21,32 @@
     <!-- MAIN -->
     <main>
         <div id="nav">
-            <img id="logo-small" src="./img/logo-small.svg" alt="logo">
-            <img id="logo-big" src="./img/logo.svg" alt="Logo">
+            <img id="logo-small" class="d-none-mq" src="./img/logo-small.svg" alt="logo">
+            <img id="logo-big" class="d-none d-block-mq" src="./img/logo.svg" alt="Logo">
 
             <section id="home">
                 <nav class="container">
                     <ul>
                         <li>
                             <img src="./img/home.svg" alt="Home">
-                            <span>Home</span>
+                            <span class="d-none d-block-mq">Home</span>
                         </li>
     
                         <li>
                             <img src="./img/search.svg" alt="Profile">
-                            <span>Cerca</span>
+                            <span class="d-none d-block-mq">Cerca</span>
     
                         </li>
     
                         <li>
                             <img src="./img/libreria.svg" alt="Library">
-                            <span>La tua libreria</span>
+                            <span class="d-none d-block-mq">La tua libreria</span>
                         </li>
                     </ul>
                 </nav>
             </section>
 
-            <section id="playlist">
+            <section id="playlist" class="d-none d-block-mq">
                 <div class="container">
                     <h3>PLAYLIST</h3>
                     <a href="#">
@@ -88,25 +88,23 @@
             </section>
 
             <section id="user-id">
-                <div class="container">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img id="download" src="./img/download.svg" alt="download">
-                                <span>Installa app</span>
-                            </a>
-                        </li>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img id="download" src="./img/download.svg" alt="download">
+                            <span class="d-none d-block-mq">Installa app</span>
+                        </a>
+                    </li>
 
-                        <li>
-                            <a href="#">
-                                <div class="layer">
-                                    <img src="./img/profile.svg" alt="profile">
-                                </div>
-                                <span>Jhon Doe</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <li>
+                        <a href="#">
+                            <div class="layer">
+                                <img src="./img/profile.svg" alt="profile">
+                            </div>
+                            <span class="d-none d-block-mq">Jhon Doe</span>
+                        </a>
+                    </li>
+                </ul>
             </section>
         </div>
         

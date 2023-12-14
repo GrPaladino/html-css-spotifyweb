@@ -12,6 +12,17 @@
     --grid-padding: 15px;
     --row-margin: -15px;
     }
+
+            /* UTILS */
+
+    .d-block-mq {
+        display: block;
+    }
+            
+    .d-none-mq {
+        display: none;
+    }
+            
     
             /* MAIN */
     
@@ -26,40 +37,22 @@
     }
     
     #nav #logo-big {
-        display: block;
-        width: 70%;
-        margin: 7px;
+        /* display: block;       */
     }
     
+
     #nav .container {
         padding: var(--navbar-padding);
     }
     
-    #nav li {
-        padding: 7px 0;
-        display: flex;
-        align-items: center;
-    }
-    
     #nav li > img {
-        height: 30px;
-        margin: 0;
-    }
-    
-    #nav li > span {
-        display: block;
-    }
-    
-    #nav > #playlist {
-        display: block;
-    }
-    
-    #nav #user-id li {
-        margin: 0;
+        height: 20px;
     }
     
     #nav #user-id li:first-child {
         border-bottom: 1px solid var(--navbar-text-color);
+        padding-bottom: 3px;
+        margin-bottom: 5px;
     }
     
     #nav #user-id a {
@@ -70,10 +63,6 @@
     
     #nav #user-id #download {
         width: 10%;
-    }
-    
-    #nav #user-id span {
-        display: block;
     }
     
     #nav #user-id .layer {
