@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* CUSTOM PROP */
+/* CUSTOM PROMT */
 
 :root {
 
@@ -120,6 +120,7 @@ main {
 
 #nav li {
     align-items: center;
+    padding: 5px 0;
 }
 
 #nav li > img {
@@ -251,10 +252,24 @@ main {
 
 #footer {
     height: var(--bar-height);
+    padding: var(--navbar-padding);
     background-color: var(--playbar-bg-color);
     justify-content: space-between;
+    align-items: center;
     color: var(--primary-text-color);
 }
 
+#footer img {
+    width: 33px;
+    height: 33px;
+    margin-right: 10px;
+}
 
+#footer h5 {
+    font-size: .7rem;
+}
 
+#footer h6 {
+    font-size: .5rem;
+    color: var(--secondary-text-color);
+}

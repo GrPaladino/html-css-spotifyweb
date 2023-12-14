@@ -3,7 +3,7 @@
         /* MEDIA QUERY S */
 @media all and (min-width: 576px) {
             
-            /* CUSTOM PROMP */
+            /* CUSTOM PROMPT */
     
     :root {
         /* Layout */
@@ -39,11 +39,6 @@
         display: none;
     }
     
-    #nav #logo-big {
-        /* display: block;       */
-    }
-    
-
     #nav .container {
         padding: var(--navbar-padding);
         text-align: start;
@@ -78,12 +73,20 @@
     #page-cnt .top a {
         font-size: .9rem;
     }
+
+            /* FOOTER */
+
+    #footer h6 {
+        display: inline;
+    }
 }
     
     
             /* MEDIA QUERY MD */
+
 @media all and (min-width: 768px) {
-    /* CUSTOM PROMP */
+    
+    /* CUSTOM PROMPT */
 
     :root {
         /* Layout */
