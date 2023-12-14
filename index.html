@@ -232,13 +232,35 @@
                 <h6>Brano</h6>
                 <h6>Nome</h6>
             </div>
-            <div class="icon">
+            <div class="icon d-flex">
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-regular fa-folder"></i>
             </div>
         </section>
-        <div class="music-ctr">lskdnlkwnfl</div>
-        <div class="volume">lwekfnlwknf</div>
+        <section class="music-ctr d-flex">
+            <div class="buttons">
+                <button><i class="fa-solid fa-shuffle"></i></button>
+                <button><i class="fa-solid fa-backward-step"></i></button>
+                <button id="play"><i class="fa-regular fa-circle-play fa-2xl"></i></button>
+                <button><i class="fa-solid fa-forward-step"></i></button>
+                <button><i class="fa-solid fa-arrow-rotate-right"></i></i></button>
+            </div>
+            <div class="time-line d-flex">
+                <span>0:25</span>
+                <div class="line line30"></div>
+                <div class="line line70"></div>
+                <span>4:35</span>
+            </div>
+        </section>
+        <section class="volume d-flex">
+            <span><i class="fa-solid fa-bars"></i></span>
+            <span><i class="fa-solid fa-desktop"></i></span>
+            <span><i class="fa-solid fa-volume-high"></i></span>
+            <div class="time-line d-none d-flex-mq">
+                <div class="line20"></div>
+                <div class="line80"></div>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
