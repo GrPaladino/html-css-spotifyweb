@@ -3,14 +3,13 @@
         /* MEDIA QUERY S */
 @media all and (min-width: 576px) {
             
-            /* COMMAND PROMP */
+            /* CUSTOM PROMP */
     
     :root {
         /* Layout */
     --navbar-width: 180px;
-    --bar-height: 100px;
-    --grid-padding: 15px;
-    --row-margin: -15px;
+    --grid-padding: 10px;
+    --row-margin: -10px;
     }
 
             /* UTILS */
@@ -21,6 +20,10 @@
             
     .d-none-mq {
         display: none;
+    }
+
+    .d-flex-mq {
+        display: flex;
     }
             
     
@@ -43,6 +46,7 @@
 
     #nav .container {
         padding: var(--navbar-padding);
+        text-align: start;
     }
     
     #nav li > img {
@@ -79,7 +83,16 @@
     
             /* MEDIA QUERY MD */
 @media all and (min-width: 768px) {
-    
+    /* CUSTOM PROMP */
+
+    :root {
+        /* Layout */
+        --grid-padding: 8px;
+        --row-margin: -8px;
+    }
+
+
+
     /* Grid content */
 
     #page-cnt .col {

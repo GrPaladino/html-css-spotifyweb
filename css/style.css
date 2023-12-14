@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* COMMAND PROP */
+/* CUSTOM PROP */
 
 :root {
 
@@ -23,8 +23,8 @@
     --navbar-width: 50px;
     --navbar-padding: 10px;
     --bar-height: 100px;
-    --grid-padding: 15px;
-    --row-margin: -15px;
+    --grid-padding: 8px;
+    --row-margin: -8px;
 }
 
 /* GRID */
@@ -79,10 +79,13 @@ a {
     display: none;
 }
 
+.d-flex {
+    display: flex;
+}
+
         /* MAIN */
 
 main {
-    display: flex;
     height: calc(100vh - var(--bar-height));
     color: var(--primary-text-color);
 }
@@ -91,7 +94,6 @@ main {
 
 #nav {
     width: var(--navbar-width);
-    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -117,7 +119,6 @@ main {
 }
 
 #nav li {
-    display: flex;
     align-items: center;
 }
 
@@ -133,13 +134,14 @@ main {
 #nav .plus {
     display: inline-block;
     width: 40px;
-    height: 40px;
+    height: 38px;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-right: 10px;
     font-size: 30px;
     background-color: var(--navbar-text-color);
     color: var(--navbar-bg-color);
+    padding-left: 11px;
 }
 
 #nav a {
@@ -161,7 +163,6 @@ main {
 }
 
 #nav #user-id a {
-    display: flex;
     justify-content: center;
 }
 
@@ -182,7 +183,6 @@ main {
     background-color: rgba(0, 0, 0, .3);
     color: var(--primary-text-color);
     padding: 10px;
-    display: flex;
     align-items: center;
     justify-content: flex-end;
 }
@@ -208,7 +208,6 @@ main {
 }
 
 #page-cnt .main ul {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
@@ -217,7 +216,7 @@ main {
         /* Grid content */
 
 #page-cnt section {
-    margin: 2rem 0;
+    margin-bottom: 2rem;
 }
 
 #page-cnt h1 {
@@ -253,6 +252,8 @@ main {
 #footer {
     height: var(--bar-height);
     background-color: var(--playbar-bg-color);
+    justify-content: space-between;
+    color: var(--primary-text-color);
 }
 
 
