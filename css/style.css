@@ -96,8 +96,7 @@ main {
     width: var(--navbar-width);
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 15px;
+    padding-top: 15px;
     background-color: var(--navbar-bg-color);
     color: var(--navbar-text-color);
     font-size: .8rem;
@@ -112,10 +111,24 @@ main {
     margin: 7px;
 }
 
+#nav #playlist {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
 
-#nav .container {
-    padding: 0;
-    padding-top: 5px;
+#nav #playlist h3 {
+    padding: 0 10px;
+    color: var(--primary-text-color);
+}
+
+#nav #home li,
+#nav #playlist a:first-of-type {
+    padding: 0 10px;
+}
+
+#nav #playlist ul {
+    flex-direction: column;
 }
 
 #nav li {
@@ -147,7 +160,6 @@ main {
 
 #nav a {
     font-size: .7rem;
-    padding: 5px 0;
 }
 
 #nav #user-id {
@@ -165,11 +177,22 @@ main {
 
 #nav #user-id a {
     justify-content: center;
+    width: 100%;
 }
 
 #nav #user-id #download {
-    width: 60%;
+    width: 30%;
 }
+
+        /* Navbar hover effect */
+
+#nav li:hover,
+#nav #playlist a:hover {
+    color: var(--primary-text-color);
+}
+
+
+
 
         /* PAGE CONTENT */
 
@@ -289,15 +312,6 @@ main {
     margin: 0 5px;
 }
 
-#footer .song-info a:hover {
-    text-decoration: underline;
-}
-
-#footer .song-info a:hover h6,
-#footer .song-info i:hover {
-    color: var(--primary-text-color);
-}
-
 #footer .buttons {
     text-align: center;
 }
@@ -323,10 +337,6 @@ main {
 
 #footer #play i {
     font-size: 1.9rem;
-}
-
-#footer #play:hover i {
-    font-size: 2rem;
 }
 
 #footer .music-ctr span {
@@ -366,6 +376,22 @@ main {
 
 #footer .volume .progress-line {
     min-width: 50%;
+}
+
+
+        /* Footer hover effect */
+
+#footer .song-info a:hover {
+    text-decoration: underline;
+}
+        
+#footer .song-info a:hover h6,
+#footer .song-info i:hover {
+    color: var(--primary-text-color);
+}
+
+#footer #play:hover i {
+    font-size: 2rem;
 }
 
 

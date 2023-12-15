@@ -39,21 +39,16 @@
         display: none;
     }
     
-    #nav .container {
-        padding: var(--navbar-padding);
-        text-align: start;
-    }
-    
     #nav li > img {
         height: 20px;
     }
     
     #nav #user-id li:first-child {
         border-bottom: 1px solid var(--navbar-text-color);
-        padding-bottom: 3px;
+        padding-bottom: 9px;
         margin-bottom: 5px;
     }
-    
+
     #nav #user-id a {
         justify-content: flex-start;
         align-items: center;
