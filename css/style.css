@@ -214,11 +214,15 @@ main {
         /* Top section */
 #page-cnt .top {
     height: var(--bar-height);
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .6);
     color: var(--primary-text-color);
     padding: 10px;
     align-items: center;
     justify-content: flex-end;
+
+    position: fixed;
+    width: calc(100% - var(--navbar-width));
+    z-index: 1;
 }
 
 #page-cnt .top a {
@@ -239,6 +243,7 @@ main {
 
 #page-cnt .main {
     padding: 15px;
+    padding-top: var(--bar-height);
 }
 
 #page-cnt .main nav {
