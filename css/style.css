@@ -219,7 +219,13 @@ main {
     font-weight: bold;
 }
 
-        /* Main section */
+#page-cnt .top a:hover {
+    font-size: 1rem;
+}
+
+        /* Top section hover */
+
+        /* MAIN SECTION */
 
 #page-cnt .main {
     padding: 15px;
@@ -270,6 +276,34 @@ main {
     color: var(--secondary-text-color);
     font-size: .8rem;
 }
+
+        /* Main section hover effect */
+
+#page-cnt .main li:hover {
+    color: var(--primary-text-color);
+}
+
+#page-cnt .main .img {
+    position: relative;
+}
+
+#page-cnt .main .hover-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#page-cnt .main img:hover {
+    opacity: .6;
+}
+
+#page-cnt .main .img:hover .hover-img {
+    display: block;
+}
+
 
         /* FOOTER */
 
