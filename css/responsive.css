@@ -93,9 +93,10 @@
         margin: 0 10px;
     }
 
-    #footer .time-line,
     #footer .volume {
-        min-width: 100px;
+        min-width: 150px;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
     }
 }
     
@@ -143,6 +144,10 @@
            /* FOOTER */
     #footer .music-ctr {
         min-width: 450px;
+    }
+
+    #footer .volume {
+        min-width: 200px;
     }
 
 }
