@@ -77,6 +77,8 @@
         
     #footer .icon {
         flex-direction: row;
+        margin-left: 15px;
+
     }
              
     #footer .music-ctr {

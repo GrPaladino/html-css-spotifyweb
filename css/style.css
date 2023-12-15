@@ -274,7 +274,12 @@ main {
         /* Grid content */
 
 #page-cnt section {
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+#page-cnt section:first-child,
+#page-cnt .main section:first-of-type {
+    margin-top: 0;
 }
 
 #page-cnt h1 {
@@ -362,7 +367,7 @@ main {
 }
 
 #footer .icon {
-    margin-left: 20px;
+    margin-left: 5px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
