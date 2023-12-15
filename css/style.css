@@ -172,6 +172,7 @@ main {
     background-color: var(--navbar-text-color);
     color: var(--navbar-bg-color);
     padding-left: 11px;
+    overflow: auto;
 }
 
 #nav a {
