@@ -277,6 +277,9 @@ main {
     font-size: .8rem;
 }
 
+#page-cnt #artisti-popolari img {
+    border-radius: 50%;
+}
         /* Main section hover effect */
 
 #page-cnt .main li:hover {
