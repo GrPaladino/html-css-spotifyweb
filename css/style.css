@@ -289,6 +289,15 @@ main {
     margin: 0 5px;
 }
 
+#footer .song-info a:hover {
+    text-decoration: underline;
+}
+
+#footer .song-info a:hover h6,
+#footer .song-info i:hover {
+    color: var(--primary-text-color);
+}
+
 #footer .buttons {
     text-align: center;
 }
@@ -316,6 +325,10 @@ main {
     font-size: 1.9rem;
 }
 
+#footer #play:hover i {
+    font-size: 2rem;
+}
+
 #footer .music-ctr span {
     font-size: .6rem;
     color: var(--primary-text-color);
@@ -336,6 +349,7 @@ main {
     width: 30%;
     height: 4px;
     background-color: var(--primary-text-color);
+    position: relative;
 }
 
 #footer .progress-line {
@@ -354,8 +368,21 @@ main {
     min-width: 50%;
 }
 
-#footer .line20 {
-    width: 20%;
-    height: 4px;
+
+#footer .progress-line:hover > .line30::after {
+    content: '';
+
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 15px;
+    width: 15px;
     background-color: var(--primary-text-color);
+    border-radius: 50%;
+}
+
+#footer .progress-line:hover > .line30 {
+    background-color: #adff2f;
 }
