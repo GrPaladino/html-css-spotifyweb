@@ -19,6 +19,8 @@
     --secondary-text-color: #696b71;
     --navbar-text-color: #a3a3a3;
 
+    --lime-effect: #adff2f;
+
     /* Layout */
     --navbar-width: 50px;
     --navbar-padding: 10px;
@@ -111,6 +113,10 @@ main {
     margin: 7px;
 }
 
+#nav section {
+    padding-top: 10px;
+}
+
 #nav #playlist {
     flex-direction: column;
     align-items: flex-start;
@@ -120,6 +126,10 @@ main {
 #nav #playlist h3 {
     padding: 0 10px;
     color: var(--primary-text-color);
+}
+
+#nav #home li:first-child {
+    border-left: 2px solid var(--lime-effect);
 }
 
 #nav #home li,
@@ -243,6 +253,24 @@ main {
     gap: 15px;
 }
 
+#page-cnt .main li:first-child {
+    position: relative;
+    padding-bottom: 7px;
+}
+
+#page-cnt .main li:first-child::after {
+    content: '';
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+
+    height: 2px;
+    width: 50px;
+    background-color: var(--lime-effect);
+}
+
         /* Grid content */
 
 #page-cnt section {
@@ -296,7 +324,6 @@ main {
     left: 50%;
     font-size: 2rem;
     transform: translate(-50%, -50%);
-    display: none;
 }
 
 #page-cnt .main img:hover {
@@ -447,5 +474,5 @@ main {
 }
 
 #footer .progress-line:hover > .line30 {
-    background-color: #adff2f;
+    background-color: var(--lime-effect);
 }
